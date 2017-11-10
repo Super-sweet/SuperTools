@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 extension String {
     /// 动态计算高度
     ///
