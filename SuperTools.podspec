@@ -1,9 +1,8 @@
 
-echo 4.0 >.swift-version
 Pod::Spec.new do |s|
 
   s.name         = "SuperTools"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "开发的一些工具."
 
   s.description  = <<-DESC
