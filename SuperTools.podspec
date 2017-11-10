@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SuperTools"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "开发的一些工具."
 
   s.description  = <<-DESC
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/Super-sweet/SuperTools.git", :tag => s.version }
 
 
-  s.source_files  = "SuperTools/Super.{swift},SuperTools/**/*.{swift}"
+  s.source_files  = "SuperTools/Super/**/*"
   s.frameworks    = "UIKit", "Foundation"
   s.requires_arc = true
 
