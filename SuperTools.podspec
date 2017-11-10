@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SuperTools"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "开发的一些工具."
 
   s.description  = <<-DESC
