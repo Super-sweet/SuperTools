@@ -9,13 +9,26 @@
 import UIKit
 
 extension UIImage {
+    
+    /// 压缩图片
+    ///
+    /// - Parameter memorySize: 压缩尺寸  该方法会无限压缩到指定尺寸，如果每次压缩的后小于10byte就停止压缩
+    /// - Returns: 图片
     func Super_compressToMemorySize(memorySize: Int) -> UIImage {
+       
+        let selfData = UIImageJPEGRepresentation(self, 1.0)
         let data = UIImageJPEGRepresentation(self, 0.5)
-        
+//        防止进入死循环
+        if let newSelfData = selfData,let newData = data{
+            if abs(newSelfData.count - newData.count) < 10 {
+              return self
+            }
+        }
         if let newData = data, newData.count > memorySize {
             var newImage = UIImage(data:newData)!
-            print("\(newData.count)")
+//            尺寸压缩
            newImage =  self.Super_image(image: newImage, zoomWithScale: 0.8)
+            
             return newImage.Super_compressToMemorySize(memorySize: memorySize)
            
         }else {
