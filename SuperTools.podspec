@@ -2,11 +2,11 @@
 Pod::Spec.new do |s|
 
   s.name         = "SuperTools"
-  s.version      = "0.0.5"
+  s.version      = "1.0.0"
   s.summary      = "开发的一些工具."
 
   s.description  = <<-DESC
-	工具
+	开发自己封装的一些小工具
                    DESC
 
   s.homepage     = "https://github.com/Super-sweet/SuperTools"
